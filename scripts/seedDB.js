@@ -94,3 +94,17 @@ const pageSeed = [
 
     }
 ];
+
+db.JustReadIt
+  .remove({})
+  .then(() => db.JustReadIt.collection.insertMany(storySeed))
+  .then(() => db.JustReadIt.collection.insertMany(pageSeed))
+  .then(() => db.JustReadIt.collection.insertMany(userSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
