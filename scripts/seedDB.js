@@ -3,8 +3,15 @@ const db = require("../models");
 
 
 mongoose.connect(
-    process.env.MONGODV_URI || 'mongodb url'
-);
+    process.env.MONGODB_URI || 'mongodb://localhost/JustReadItDB',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
+  
 
 const userSeed = [
     {
