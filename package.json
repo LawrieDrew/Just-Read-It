@@ -1,4 +1,5 @@
 {
+
   "name": "Just-Read-It",
   "version": "1.0.0",
   "description": "",
@@ -17,6 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/LawrieDrew/Just-Read-It.git"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",

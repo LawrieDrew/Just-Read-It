@@ -94,6 +94,7 @@ const pageSeed = [
     }
 ];
 
+
 db.User
   .remove({})
   .then(() => db.User.collection.insertMany(userSeed))

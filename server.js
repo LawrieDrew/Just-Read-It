@@ -4,6 +4,17 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const sess = {
+    secret: 'so secret, man',
+    cookie: {},
+    resave: false,
+    saveUnittialized: true,
+    store: new Mongoosery({
+        db: mongoose
+    })
+}
+
+app.use(session(sess));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
