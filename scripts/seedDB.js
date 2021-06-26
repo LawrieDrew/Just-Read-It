@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 const db = require("../models");
 
-
 mongoose.connect(
-    process.env.MONGODV_URI || 'mongodb url'
+    process.env.MONGODV_URI || 'mongodb://localhost/justreadit'
 );
 
 const userSeed = [
@@ -94,3 +93,15 @@ const pageSeed = [
 
     }
 ];
+
+db.User
+  .remove({})
+  .then(() => db.User.collection.insertMany(userSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
