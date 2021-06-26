@@ -1,16 +1,25 @@
 {
-  "name": "just-read-it",
+
+  "name": "Just-Read-It",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LawrieDrew/Just-Read-It.git"
   },
+
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -23,6 +32,6 @@
     "connect-mongodb-session": "^2.4.1",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
-    "mongoose": "^5.12.14"
+    "mongoose": "^5.12.15"
   }
 }

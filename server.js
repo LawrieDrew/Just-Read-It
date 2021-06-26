@@ -1,10 +1,8 @@
 const express = require ("express");
 const mongoose = require("mongoose");
-
-const Mongoosery = require('connect-mongodb-session')(session.Store);
-
+const routes = require("./routes");
 const app = express();
-const PORT = pprocess.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const sess = {
     secret: 'so secret, man',
@@ -23,9 +21,9 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
+app.use(routes);
 
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/justreadit");
 
 app.listen(PORT, function() {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
