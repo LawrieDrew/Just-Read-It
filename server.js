@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Mongoosery = require('connect-mongodb-session')(session.Store);
 
 const app = express();
-const PORT = pprocess.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const sess = {
     secret: 'so secret, man',
