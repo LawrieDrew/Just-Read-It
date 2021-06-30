@@ -12,9 +12,19 @@ const storySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    level: {
+        type: Number,
+        unique: true
+    },
     pages: [{
-        type: Schema.Types.ObjectId,
-        ref: "Page"
+        text: {
+            type: String,
+            required: true
+        },
+        keyword: {
+            type: String,
+            required: true
+        }
     }]
 
 });
