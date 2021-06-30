@@ -17,86 +17,73 @@ const userSeed = [
         username: "joeythekid",
         email: "email@gmail.com",
         password: "password123",
-        stories: [1, 2]
+        level: 1
     },
     {
         name: "Laurie",
         username: "laurierox",
         email: "laurie@gmail.com",
         password: "password123",
-        stories: [1, 2, 3]
+        level: 3
     }
 ]
 const storySeed = [
     {
         title: "Title 1",
         synopsis: "Synopsis 1",
-        pages: [1,2,3]
+        level: 1,
+        pages: [
+          {
+            text: "The dog barks",
+            keyword: "dog"
+          },
+          {
+            text: "The dog jumps",
+            keyword: "jumps"
+          },
+          {
+            text: "The dog runs",
+            keyword: "runs"
+          }          
+      ]
     },
     {
         title: "Title 2",
         synopsis: "Synopsis 2",
-        pages: [4,5,6]
+        level: 2,
+        pages: [
+          {
+            text: "The cat sleeps",
+            keyword: "cat"
+          },
+          {
+            text: "The cat meows",
+            keyword: "meows"
+          },
+          {
+            text: "The cat eats",
+            keyword: "eats"
+          }          
+      ]
     },
     {
         title: "Title 3",
         synopsis: "Synopsis 3",
-        pages: [7,8,9]
-    }
-];
-
-const pageSeed = [
-    {
-        text: "The dog barks",
-        keyword: ["barks"],
-
-    },
-    {
-        text: "The dog runs",
-        keyword: ["runs"],
-
-    },
-    {
-
-        text: "The dog jumps",
-        keyword: ["jumps"],
- 
-    },
-    {
-
-        text: "The cat meows",
-        keyword: ["meows"],
-
-    },
-    {
-
-        text: "The cat drinks",
-        keyword: ["drinks"],
-  
-    },
-    {
-
-        text: "The cat sleeps",
-        keyword: ["sleeps"],
-
-    },
-    {
- 
-        text: "The cow moos",
-        keyword: ["moos"],
-
-    },
-    {
-
-        text: "The duck quacks",
-        keyword: ["quacks"],
-
-    },
-    {
-
-        text: "The chicken clucks",
-        keyword: ["clucks"],
-
+        level: 3,
+        pages: [
+          {
+            text: "The kid laughs",
+            keyword: "kid"
+          },
+          {
+            text: "The kid plays",
+            keyword: "plays"
+          },
+          {
+            text: "The kid runs",
+            keyword: "runs"
+          }          
+      ]
     }
 ];
 
@@ -116,17 +103,6 @@ db.User
 db.Story
   .remove({})
   .then(() => db.Story.collection.insertMany(storySeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
-db.Page
-  .remove({})
-  .then(() => db.Page.collection.insertMany(pageSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
