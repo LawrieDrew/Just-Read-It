@@ -1,8 +1,8 @@
 const express = require ("express");
 const mongoose = require("mongoose");
-const session = require('express-session');
+//const session = require('express-session');
 
-const Mongoosery = require('connect-mongodb-session')(session.Store);
+//const Mongoosery = require('connect-mongodb-session')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
