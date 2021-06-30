@@ -4,7 +4,7 @@ const router = require("express").Router();
 router.route("/")
     .get(storyController.findAll);
 
-//for specific user
+//for specific story
 router 
     .route("/:id")
     .get(storyController.findById);

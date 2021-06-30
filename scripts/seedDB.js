@@ -106,3 +106,26 @@ db.User
     console.error(err);
     process.exit(1);
   });
+  
+db.Story
+  .remove({})
+  .then(() => db.Story.collection.insertMany(storySeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+db.Page
+  .remove({})
+  .then(() => db.Page.collection.insertMany(pageSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
