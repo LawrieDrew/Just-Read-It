@@ -10,7 +10,7 @@ const routes = require("./routes");
 
 
 var store = new MongoDBStore({
-    uri: process.env.MONGODB_URI || "mongodb://localhost/JustReadIt",
+    uri: process.env.MONGODB_URI || "mongodb://localhost/JustReadItDB",
     collection: 'mySessions'
   });
 
