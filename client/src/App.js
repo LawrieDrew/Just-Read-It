@@ -1,7 +1,7 @@
 import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-// import StoryPage from "./pages/StoryPage";
+import StoryPage from "./pages/StoryPage";
 
 // import Wrapper from "./components/Wrapper";
 
@@ -9,13 +9,23 @@ import Home from "./pages/Home";
 function App() {
   return (
 
-      <div>
-        
-     
-        <Home />
-     
-       
-      </div>
+    <Router>
+          <div>
+            
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+
+                <Route exact path="/:id">
+                  <StoryPage />
+                </Route>
+             </Switch>
+
+  
+          </div>
+    </Router>
+          
 
   );
 }
