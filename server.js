@@ -4,6 +4,8 @@ const session = require('express-session');
 
 const MongoDBStore = require('connect-mongodb-session')(session);
 
+const jwt = require('jsonwebtoken');
+
 const app = express();
 const PORT = process.env.PORT || 3005;
 const routes = require("./routes");
