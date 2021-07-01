@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import { List,  ListItem }  from "../components/List";
-import BookBtn from "../components/BookButton";
+import List from "../components/List";
+import ListItem from "../components/ListItem";
+// import BookBtn from "../components/BookButton";
 // import StartBtn from "../components/StartButton";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Wrapper from "../components/Wrapper"
 
 
 
@@ -26,10 +28,12 @@ function Home() {
         document.getElementById("Blurb").innerHTML = synopsis
     }
 
-   
-
+    function goToBook(_id){
+      window.location = "/"+_id
+    }
     return (
         <div>
+          <Wrapper>
                 <h1>Just Read It</h1>
                 {stories.length ? (
               <List>
@@ -38,8 +42,8 @@ function Home() {
                       <strong>
                         Title: {stories.title} <br></br>
                       </strong>
-                      <BookBtn onClick={() => upDateBlurb(stories.synopsis)}> Hear about this story </BookBtn>
-                      <Link to={"/"+stories._id}>Read story!</Link>
+                      <img onMouseOver={() => upDateBlurb(stories.synopsis)} onClick={() =>goToBook(stories._id)} href={"/"+stories._id} src="./images/book.png" alt="book"/>
+              
                   </ListItem>
                 ))}
               </List>
@@ -48,6 +52,8 @@ function Home() {
             )}
 
             <h2 id="Blurb">Hello! Welcome to JustReadIt! Start by clicking on a story to hear about it.</h2>
+
+            </Wrapper>
             
         </div>
     )

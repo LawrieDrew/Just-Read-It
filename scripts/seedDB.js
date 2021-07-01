@@ -32,58 +32,37 @@ const storySeed = [
         title: "Title 1",
         synopsis: "Synopsis 1",
         level: 1,
-        pages: [
-          {
-            text: "The dog barks",
-            keyword: "dog"
-          },
-          {
-            text: "The dog jumps",
-            keyword: "jumps"
-          },
-          {
-            text: "The dog runs",
-            keyword: "runs"
-          }          
-      ]
+        page1: "The ball is _____",
+        page1Keyword: "blue",
+        page2: "The grass is ______",
+        page2Keyword: "green",
+        page3: "The tree is ______",
+        page3Keyword: "tall"  
     },
     {
         title: "Title 2",
         synopsis: "Synopsis 2",
         level: 2,
-        pages: [
-          {
-            text: "The cat sleeps",
-            keyword: "cat"
-          },
-          {
-            text: "The cat meows",
-            keyword: "meows"
-          },
-          {
-            text: "The cat eats",
-            keyword: "eats"
-          }          
-      ]
+        page1: "The kid _____",
+        page1Keyword: "plays",
+        page1Options: ["plays", "cries", "sleeps"],
+        page2: "The kid _____",
+        page2Keyword: "laughs",
+        page2Options: ["jumps", "laughs", "eats"],
+        page3: "The kid _____",
+        page3Options: ["sings", "yells","runs"],
+        page3Keyword: "runs"
     },
     {
         title: "Title 3",
         synopsis: "Synopsis 3",
         level: 3,
-        pages: [
-          {
-            text: "The kid laughs",
-            keyword: "kid"
-          },
-          {
-            text: "The kid plays",
-            keyword: "plays"
-          },
-          {
-            text: "The kid runs",
-            keyword: "runs"
-          }          
-      ]
+        page1: "The cat is ______",
+        page1Keyword: "brown",
+        page2: "The cat is ______",
+        page2Keyword: "sleepy",
+        page3: "The cat takes a _____",
+        page3Keyword: "nap"
     }
 ];
 
