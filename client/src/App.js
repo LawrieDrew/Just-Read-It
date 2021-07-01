@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import Cookies from "js-cookie";
 import Home from "./pages/Home";
 import StoryPage from "./pages/StoryPage";
 
@@ -10,6 +11,16 @@ import Auth from "./auth";
 function App() {
 
   const [auth, setAuth] = React.useState(false);
+  const readCookie = () => {
+    Cookies.get("user");
+    if (user){
+      setAuth(true);
+    }
+  }
+
+  React.useEffect(() => {
+    readCookie();
+  }, [])
   return (
 
       <div>
@@ -45,10 +56,15 @@ function App() {
 
 //login/logout doodads
 const Login = () => {
+  const Auth = React.useContext(Auth)
+  const handleOnClick = () => {
+    Auth.setAuth(true);
+    Cookies.set("user" , "login")
+  }
   return(
     <div>
       <h1>JUST READ IT!</h1>
-      <button>Login</button>
+      <button onClick={handleOnClick}>Login</button>
     </div>
   )
 }
@@ -95,7 +111,7 @@ const ProtectedLogin = ({auth, component:Component,...rest}) => {
       <Component/>
     ):
     (
-      <Redirect to="/login"/>
+      <Redirect to="/Home"/>
     )
   }
     />
