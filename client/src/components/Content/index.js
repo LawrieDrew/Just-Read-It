@@ -1,13 +1,15 @@
 import React from "react";
 
-function PageCard({children}) {
-    return (
+
+function Content(props) {
+
+    return(
         <div className="card">
             <div className="card-body">
-                <p className="card-text">{children}</p>
+                {props.children}
             </div>
         </div>
     )
 }
 
-export default PageCard;
+export default Content;
