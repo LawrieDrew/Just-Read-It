@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import StoryPage from "./pages/StoryPage";
 import Register from "./pages/Register";
 
+//adding more
+
 // import Wrapper from "./components/Wrapper";
 
 export const CredentialsContext = React.createContext(null);
