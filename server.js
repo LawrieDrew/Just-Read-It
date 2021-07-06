@@ -1,10 +1,9 @@
 const express = require ("express");
 const mongoose = require("mongoose");
 const session = require('express-session');
+const cors = require('cors');
 
 const MongoDBStore = require('connect-mongodb-session')(session);
-
-const jwt = require('jsonwebtoken');
 
 const app = express();
 const PORT = process.env.PORT || 3005;
@@ -15,6 +14,8 @@ var store = new MongoDBStore({
     uri: process.env.MONGODB_URI || "mongodb://localhost/JustReadItDB",
     collection: 'mySessions'
   });
+
+app.use(cors());
 
 app.use(session({
     secret: process.env.SESSION_SECRET || 'This is a secret',

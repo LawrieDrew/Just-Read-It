@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import API from "../utils/API";
 import List from "../components/List";
 import ListItem from "../components/ListItem";
@@ -6,10 +6,12 @@ import ListItem from "../components/ListItem";
 // import StartBtn from "../components/StartButton";
 // import { Link } from "react-router-dom";
 import Wrapper from "../components/Wrapper"
-
+import {CredentialsContext} from "../App";
 
 
 function Home() {
+  const [credentials] = useContext(CredentialsContext)
+
     const [stories, setStories] = useState([])
 
     useEffect(() => {
@@ -35,6 +37,7 @@ function Home() {
         <div>
           <Wrapper>
                 <h1>Just Read It</h1>
+                <h2>Welcome {credentials && credentials.username}</h2>
                 {stories.length ? (
               <List>
                 {stories.map(stories => (

@@ -1,121 +1,45 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import Cookies from "js-cookie";
+import React, {useState} from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import StoryPage from "./pages/StoryPage";
+import Register from "./pages/Register";
 
-import Wrapper from "./components/Wrapper";
-import Auth from "./auth";
+//adding more
 
+// import Wrapper from "./components/Wrapper";
+
+export const CredentialsContext = React.createContext(null);
 //need to add login/logout routes below
 function App() {
-
-  const [auth, setAuth] = React.useState(false);
-  const readCookie = () => {
-    Cookies.get("user");
-    if (user){
-      setAuth(true);
-    }
-  }
-
-  React.useEffect(() => {
-    readCookie();
-  }, [])
+  const credentialsState =useState(null);
   return (
+<div>
+      <CredentialsContext.Provider value={credentialsState}>
+          <Router>
+          
+              <Switch>
+                  <Route exact path="/">
+                    <Home />
+                  </Route>
 
-      <div>
-        <Auth.Provider value={{auth, setAuth}}>
-        <Router>
-          <Routes>
+                  <Route exact path="/register">
+                    <Register />
+                  </Route>
 
-          </Routes>
-       <div>
+                  <Route exact path="/:id">
+                    <StoryPage />
+                  </Route>
+
+                  
+              </Switch>  
             
-       <Switch>
-              <Route exact path="/">
-                 <Home />
-              </Route>
-
-             <Route exact path="/:id">
-            <StoryPage />
-             </Route>
-         </Switch>
-
+          </Router>
+    </CredentialsContext.Provider>
+</div>
   
-      </div>
- </Router>
- </Auth.Provider>        
+          
 
   );
-
-
-      </div>
-
-  
-}
-
-//login/logout doodads
-const Login = () => {
-  const Auth = React.useContext(Auth)
-  const handleOnClick = () => {
-    Auth.setAuth(true);
-    Cookies.set("user" , "login")
-  }
-  return(
-    <div>
-      <h1>JUST READ IT!</h1>
-      <button onClick={handleOnClick}>Login</button>
-    </div>
-  )
-}
-
-const Home = () => {
-  return(
-    <div>
-      <h1>Welcome!</h1>
-      <button>Logout</button>
-    </div>
-  )
-}
-
-const Routes = () => {
-  const Auth = React.useContext(Auth)
-  return(
-    <Switch>
-      <Route path="/login" component={Login} auth={Auth.auth}/>
-      <Route path="/Home" auth={Auth.auth} component={Home}/>
-    </Switch>
-  )
-}
-
-const ProtectedRoute = ({auth, component:Component,...rest}) => {
-  return(
-    <Route
-    {...rest}
-    render = {() =>!auth? (
-      <Component/>
-    ):
-    (
-      <Redirect to="/login"/>
-    )
-  }
-    />
-  )
-}
-
-const ProtectedLogin = ({auth, component:Component,...rest}) => {
-  return(
-    <Route
-    {...rest}
-    render = {() =>auth? (
-      <Component/>
-    ):
-    (
-      <Redirect to="/Home"/>
-    )
-  }
-    />
-  )
 }
 
 export default App;
