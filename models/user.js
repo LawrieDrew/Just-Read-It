@@ -17,10 +17,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
+        validate: [validator.isEmail, "Email is invalid"]
     },
     password: {
         type: String,
-        required: true
+        required: [true, "Password is required"],
+        select: false
     },
     level: {
         type : Number, 
