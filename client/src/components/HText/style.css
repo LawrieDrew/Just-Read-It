@@ -1,0 +1,16 @@
+div {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* joey main font change */
+h1 {
+    font-family: 'Lakki Reddy', cursive;
+    color: black;
+    transform: rotate(-10deg);
+}
+
+h1:hover {
+    transform: rotate(-20deg);
+}
+
