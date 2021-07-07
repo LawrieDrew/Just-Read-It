@@ -6,11 +6,10 @@ import ListItem from "../components/ListItem";
 // import StartBtn from "../components/StartButton";
 // import { Link } from "react-router-dom";
 import Wrapper from "../components/Wrapper"
-import {CredentialsContext} from "../App";
 
 
 function Home() {
-  const [credentials] = useContext(CredentialsContext)
+ 
 
     const [stories, setStories] = useState([])
 
