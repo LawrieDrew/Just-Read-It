@@ -8,6 +8,7 @@ import ListItem from "../components/ListItem";
 import Wrapper from "../components/Wrapper"
 
 
+
 function Home() {
  
 
@@ -54,7 +55,7 @@ function Home() {
             )}
 
             <h2 id="Blurb">Hello! Welcome to JustReadIt! Start by clicking on a story to hear about it.</h2>
-
+            <Cloud/>
             </Wrapper>
             
         </div>

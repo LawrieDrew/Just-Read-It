@@ -34,7 +34,7 @@ const Auth = () => {
 
     return (
         <Fragment>
-        
+       
             <div className="form-switcher">
                 <div className={loginClass} onClick={e => setRegister(false)}>Login</div>
                 <div className={registerClass} onClick={e => setRegister(true)}>Sign Up</div>
@@ -83,8 +83,9 @@ const Auth = () => {
                     value ={buttonText}
                     />
                 </form>
-            
+                
             </div>
+            
        
         </Fragment>
 

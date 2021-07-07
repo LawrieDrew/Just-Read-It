@@ -1,4 +1,7 @@
 const db = require("../models");
+const jwt = require("jswonwebtoken");
+const bcrypt = require("bcrypt");
+const User = require ("../models/user");
 
 module.exports = {
   findAll: function(req, res) {
