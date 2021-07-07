@@ -1,6 +1,4 @@
-* {
-    margin: 10px;
-}
+
 .hidden {
     display: none;
 }
@@ -16,5 +14,9 @@ img:hover {
 
 .home {
     background-image: url(./home.jpg);
-    height: 100vh;
+    background-size: cover;
+}
+
+.story-title {
+    margin-bottom: 20px;
 }

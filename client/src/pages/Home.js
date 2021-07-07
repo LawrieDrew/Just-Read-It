@@ -41,7 +41,7 @@ function Home() {
 
     return (
         <div className="home">
-          
+
             <HText>
               Just Read It!
             </HText>
@@ -49,11 +49,11 @@ function Home() {
                   {stories.length ? (
                 <List>
                   {stories.map(stories => (
-                    <ListItem key={stories._id} onClick={() => upDateBlurb(stories.synopsis)}>
+                    <ListItem  key={stories._id} onClick={() => upDateBlurb(stories.synopsis)}>
                         <audio id="pop" src={"./audio/"+"pop"+".mp3"}></audio>
-                        <strong>
+                        <h3 className="story-title">
                           Title: {stories.title} <br></br>
-                        </strong>
+                        </h3>
                         <img onMouseOver={() => upDateBlurb(stories.synopsis)} onClick={() =>goToBook(stories._id)} href={"/"+stories._id} src="./images/book.png" alt="book"/>
                         
                     </ListItem>
