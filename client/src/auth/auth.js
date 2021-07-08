@@ -1,6 +1,19 @@
 import React, {Fragment, useState} from "react";
+import API from "../utils/API";
 
 const Auth = () => {
+    const signUpUser = async (email, password) => {
+        try{
+            const config = {headers: {'Content-Type': 'application/json'}}
+            const body = {email, password, name, username};
+            const res = await API.createUser("api/user/signup", body, config);
+            console.log(res);
+        } catch (err){
+            console.log(err)
+        }
+    }
+
+
     const [register, setRegister] = useState(false);
 
     const [formData, setFormData] = useState({
@@ -18,10 +31,11 @@ const Auth = () => {
         })
     }
 
-    console.log(formData)
+    
 
     const onSubmit= (e) => {
        e.preventDefault();
+       signUpUser(email, password, username, name);
        console.log("button clicked") 
     }
 

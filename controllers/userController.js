@@ -1,5 +1,5 @@
 const db = require("../models");
-const jwt = require("jswonwebtoken");
+const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require ("../models/user");
 const JWT_SECRET = process.env.JWT_SECRET;
@@ -11,7 +11,7 @@ const signJWT = (id) => {
   })
 }
 
-const sendToken = (user, statusCode, req, res) = {
+const sendToken = (user, statusCode, req, res) => {
   const token = signJWT(user._id)
   res.cookie('jwt', token, {
     expires: new Date(Date.now() + JWT_EXPIRES),
@@ -27,7 +27,7 @@ const sendToken = (user, statusCode, req, res) = {
   })
 }
 
-const encryptPass = (password) => {
+const encryptPass = async (password) => {
   return await bcrypt.hash(password, 12)
 }
 
@@ -44,11 +44,11 @@ module.exports = {
       .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: function  (req, res) {
     const {email, username, password, name} = req.body;
     const pw = encryptPass(password)
     try {
-      const newUser = await User.create({
+      const newUser = User.create({
         email,
         password: pw,
         name,
