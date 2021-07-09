@@ -25,8 +25,8 @@
 
 .sun {
     position:absolute;
-    width:100px;
-    left:10%;
+    width:800px;
+    left:-10%;
     bottom:60%;
     z-index:1;
     margin-left:50px;
@@ -34,14 +34,6 @@
 
     animation: sun 10s infinite linear;
 }
-.sun {
-    position:absolute;
-    width:500px;
-    z-index: -75;
-
-    animation: sun 10s infinite linear;
-}
-
 
 .kid1 {
     position:absolute;

@@ -51,7 +51,7 @@ function Home() {
                   {stories.length ? (
                 <List>
                   {stories.map(stories => (
-                    <ListItem  className="book" key={stories._id} onClick={() => upDateBlurb(stories.synopsis)}>
+                    <ListItem className="book" key={stories._id} onClick={() => upDateBlurb(stories.synopsis)}>
                         <audio id="pop" src={"./audio/"+"pop"+".mp3"}></audio>
                         <h3 className="story-title">
                           Title: {stories.title} <br></br>
