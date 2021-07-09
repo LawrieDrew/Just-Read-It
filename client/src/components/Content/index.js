@@ -5,7 +5,7 @@ function Content(props) {
 
     return(
         <div className="story-card">
-            <div className="card-body">
+            <div className="story-card-body">
                 {props.children}
             </div>
         </div>

@@ -41,7 +41,6 @@ function StoryPage(props) {
         <div className="story-card">
             <h2>{story.title}</h2> 
             <Col size="md-4">
-            <Card className="story-card">
             <Content>
               <div id="pageOne">
               <h3> {story.page1}</h3>
@@ -61,12 +60,11 @@ function StoryPage(props) {
               <button className="next-btn" onClick={() => increment3()}>Complete Story!</button>
               </div>
             </Content>
-            </Card>
             </Col>
             </div>
             <Col>
               <Row>
-              <div id="pageOne">
+              <div className="answer-card">
                 <div>
                 <button className="answer-btn" size="lg">
                   Answer 1

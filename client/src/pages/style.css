@@ -5,11 +5,15 @@
 }
 
 img {
-    width: 200px
+    width: 95%;
+    padding: 10%;
 }
 
-.story-page {
-
+#pageOne {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .answer-btn {
@@ -87,22 +91,29 @@ img {
     transform: translateY(4px);
   }
 
-.card {
-    background: PowderBlue !important;
-    border: 25% !important;
-}
 
 
 
 
 .story-page {
-    background-color: #FFFACD;
+    background-color: PowderBlue;
 }
 
 .story-card {
     background: PowderBlue !important;
-    border: 25% !important;
+    border-radius: 5%;
+    margin-bottom: 5%;
 }
+
+.story-card-body {
+    background-color: #FFF0F5;
+    width: 50%;
+    height: 125%;
+    border-radius: 8px;
+    margin-left: 25%;
+    padding: 5%;
+}
+
 
 h3 {
     font-family: 'Lakki Reddy', cursive !important;
@@ -111,5 +122,6 @@ h3 {
 
 h2 {
     font-family: 'Lakki Reddy', cursive !important;
-    margin-top: 10%;
+    padding: 5%;
+    font-size: 45px !important;
 }
