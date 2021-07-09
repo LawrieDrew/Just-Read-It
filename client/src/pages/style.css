@@ -3,20 +3,121 @@
     display: none;
 }
 
-img {
+.book {
     width: 200px;
     transform: rotate(10deg);
 }
 
-img:hover {
+.book:hover {
     transform: scale(1.1);
-}
-
-.home {
-    background-image: url(./home.jpg);
-    background-size: cover;
 }
 
 .story-title {
     margin-bottom: 20px;
 }
+
+.home {
+    background-image: url(./BACKGROUND.png);
+    background-size: cover;
+    height: 100vh;
+    z-index:-100;
+}
+
+.sun {
+    position:absolute;
+    width:100px;
+    left:10%;
+    bottom:60%;
+    z-index:1;
+    margin-left:50px;
+    margin-top:50px;
+
+    animation: sun 10s infinite linear;
+}
+.sun {
+    position:absolute;
+    width:500px;
+    z-index: -75;
+
+    animation: sun 10s infinite linear;
+}
+
+
+.kid1 {
+    position:absolute;
+    width:2000px;
+    left:10%;
+
+    animation: jump 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.kid2 {
+    position:absolute;
+    width:2000px;
+    left:10%;
+
+    animation: jump2 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.kid3 {
+    position:absolute;
+    width:2000px;
+    left:10%;
+
+    animation: jump 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.kid4 {
+    position:absolute;
+    width:2000px;
+    left:10%;
+
+    animation: jump2 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.kid5 {
+    position:absolute;
+    width:2000px;
+    left:10%;
+
+    animation: jump 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0% {
+        top:10%;
+    }
+    100% {
+        top:20%;
+    }
+}
+
+@keyframes jump2 {
+    0% {
+        top:5%;
+    }
+    100% {
+        top:15%;
+    }
+}
+
+@keyframes sun {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(359deg);
+    }
+}
+
