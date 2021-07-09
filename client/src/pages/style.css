@@ -1,3 +1,5 @@
+
+
 .hidden {
     display: none;
 }
@@ -11,9 +13,11 @@ img {
 }
 
 .answer-btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: 2px white;
     color: white;
+    font-family: 'Lakki Reddy', cursive;
+    font-size: 24px !important;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -21,6 +25,8 @@ img {
     font-size: 16px;
     border-radius: 8px;
     transition-duration: 0.4s;
+    padding: 5%;
+    margin: 5%;
 }
 
 .answer-btn:hover {
@@ -34,9 +40,10 @@ img {
   }
 
 .next-btn {
-    background-color: #4169E1; /* Green */
+    background-color: #4169E1;
     border: 2px white;
     color: white;
+    font-family: 'Lakki Reddy', cursive;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -57,9 +64,10 @@ img {
   }
 
   .home-btn {
-    background-color: #CD853F; /* Green */
+    background-color: #CD853F;
     border: 2px white;
     color: white;
+    font-family: 'Lakki Reddy', cursive;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -79,12 +87,29 @@ img {
     transform: translateY(4px);
   }
 
-
-
-
-.story-page {
-
+.card {
+    background: PowderBlue !important;
+    border: 25% !important;
 }
 
 
 
+
+.story-page {
+    background-color: #FFFACD;
+}
+
+.story-card {
+    background: PowderBlue !important;
+    border: 25% !important;
+}
+
+h3 {
+    font-family: 'Lakki Reddy', cursive !important;
+    
+}
+
+h2 {
+    font-family: 'Lakki Reddy', cursive !important;
+    margin-top: 10%;
+}

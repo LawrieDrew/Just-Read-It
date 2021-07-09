@@ -6,6 +6,8 @@ import Content from "../components/Content";
 // import List from "../components/List";
 // import ListItem from "../components/ListItem";
 import Col from "../components/Col";
+import Row from "../components/Row";
+import Card from 'react-bootstrap/Card';
 
 
 function StoryPage(props) {
@@ -34,24 +36,15 @@ function StoryPage(props) {
       window.location.href="/"
     }
 
-// shot at populating answer buttons with options
-
-    //var chooseOptions1 = function () {
-      //var unique = true;
-      //num = Math.floor(Math.random() * a.length - 3);
-      //option = {story.page1Options}.splice(num,1);
-      //{story.page1Options}.push(option);
-    //}
-
-
-
     return (
-        <div className="story-page">
+      <div className="story-page">
+        <div className="story-card">
             <h2>{story.title}</h2> 
             <Col size="md-4">
+            <Card className="story-card">
             <Content>
               <div id="pageOne">
-              <h3>{story.page1}</h3>
+              <h3> {story.page1}</h3>
               <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/>
               <button className="next-btn" onClick={() => increment()}>Next Page</button>
               </div>
@@ -68,34 +61,32 @@ function StoryPage(props) {
               <button className="next-btn" onClick={() => increment3()}>Complete Story!</button>
               </div>
             </Content>
-            <Answers>
+            </Card>
+            </Col>
+            </div>
+            <Col>
               <Row>
               <div id="pageOne">
                 <div>
-                <Col sm>
                 <button className="answer-btn" size="lg">
-                  {story.page1Options}
+                  Answer 1
                 </button>
-                </Col>
-                <Col sm>
                 <button className="answer-btn" size="lg">
-                  {story.page1Options}
+                  Answer 2
                 </button>
-                </Col>
-                <Col sm>
                 <button className="answer-btn" size="lg">
-                  {story.page1Options}
+                  Answer 3
                 </button>
-                </Col>
                 </div>
                 </div>
                 </Row>
-            </Answers>
-            </Col>
+              </Col>
+            
             
         
          
         </div>
+        
           
       );
 };

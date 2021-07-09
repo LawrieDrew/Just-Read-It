@@ -21,10 +21,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    stories: [{
-        type : Schema.Types.ObjectID, 
-        ref: "Story"
-    }]
+    level: {
+        type : Number, 
+        default: 1
+    }
 
 });
 
