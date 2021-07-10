@@ -2,6 +2,13 @@
     display: none;
 }
 
+
+
+/* HOME PAGE STYLES JOEY */
+/* IMPORT PROPER FONTS ON INDEX HTML */
+/* USE HTEXT AND UPDATED WRAPPER COMPONENTS */
+/* SOUNDS */
+
 .book {
     width: 200px;
     transform: rotate(10deg);
@@ -83,8 +90,7 @@
     width:2000px;
     left:10%;
     right:10%;
-    
-
+ 
     animation: jump2 4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -179,3 +185,5 @@
         left:110%;
     }
 }
+
+/* END HOME STYLES - JOEY */
