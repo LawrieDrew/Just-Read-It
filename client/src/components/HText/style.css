@@ -8,6 +8,7 @@ h1 {
     font-family: 'Lakki Reddy', cursive;
     color: black;
     transform: rotate(-10deg);
+    font-size:100px;
 }
 
 h1:hover {

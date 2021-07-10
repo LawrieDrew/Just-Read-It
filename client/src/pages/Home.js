@@ -41,15 +41,15 @@ function Home() {
 
     return (
 
-        <div className="home"> 
-        {/* className="home"> */}
+      <div className="home"> 
 
+        <div className="main">
             <HText>
               Just Read It!
             </HText>
-            <Wrapper>
+            <Wrapper >
                   {stories.length ? (
-                <List>
+                <List className="booklist">
                   {stories.map(stories => (
                     <ListItem className="book" key={stories._id} onClick={() => upDateBlurb(stories.synopsis)}>
                         <audio id="pop" src={"./audio/"+"pop"+".mp3"}></audio>
@@ -68,8 +68,9 @@ function Home() {
               <h2 id="Blurb">Hello! Welcome to JustReadIt! Start by clicking on a story to hear about it.</h2>
 
             </Wrapper>
+        </div>
 
-          <div className="background">
+        <div className="background">
             <div>
                 {/* KIDS */}
                 <img className="kid1" src="./images/background/KID1relative.png" alt="kid1"></img>
@@ -77,23 +78,17 @@ function Home() {
                 <img className="kid3" src="./images/background/kid3relative.png" alt="kid3"></img>
                 <img className="kid4" src="./images/background/kid4relative.png" alt="kid4"></img>
                 <img className="kid5" src="./images/background/kid5relative.png" alt="kid5"></img>
-                
-                {/* SHADOWS */}
-                <image className="shadow1" src="./background/SHADOW 1.png"></image>
-                <image className="shadow2" src="./background/SHADOW 2.png"></image>
-                <image className="shadow3" src="./background/SHADOW 3.png"></image>
-                <image className="shadow4" src="./background/SHADOW 4.png"></image>
-                <image className="shadow5" src="./background/SHADOW 5.png"></image>
 
                 {/* SUN AND CLOUDS */}
                 <img className="sun" src="./images/background/SUN.png" alt="sun"></img>
-                <image className="cloud1" src="./background/CLOUD 1.png"></image>
-                <image className="cloud2" src="./background/CLOUD 2.png"></image>
+                <img className="cloud1" src="./images/background/CLOUD1.png" alt="cloud1"></img>
+                <img className="cloud2" src="./images/background/CLOUD2.png" alt="cloud2"></img>
+                <img className="cloud3" src="./images/background/CLOUD2.png" alt="cloud3"></img>
                 
             </div>
-          </div>
-
         </div>
+
+      </div>
     )
 
 }

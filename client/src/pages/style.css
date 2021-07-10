@@ -1,4 +1,3 @@
-
 .hidden {
     display: none;
 }
@@ -20,15 +19,24 @@
     background-image: url(./BACKGROUND.png);
     background-size: cover;
     height: 100vh;
-    z-index:-100;
 }
+
+/* WORKS BUT OFF CENTER */
+.main {
+    position:absolute;
+    width:auto;
+    z-index:5;
+    left:30%;
+    right:30%;
+    /* margin-left:auto;
+    margin-right:auto; */
+} 
 
 .sun {
     position:absolute;
     width:800px;
     left:-10%;
     bottom:60%;
-    z-index:1;
     margin-left:50px;
     margin-top:50px;
 
@@ -39,7 +47,7 @@
     position:absolute;
     width:2000px;
     left:10%;
-
+    
     animation: jump 4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -49,7 +57,7 @@
     position:absolute;
     width:2000px;
     left:10%;
-
+    
     animation: jump2 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -79,10 +87,34 @@
     position:absolute;
     width:2000px;
     left:10%;
-
+    
     animation: jump 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+
+.cloud1 {
+    position: absolute;
+    width:500px;
+    top:10%;
+
+    animation: cloud1 11s infinite linear;
+}
+
+.cloud2 {
+    position: absolute;
+    width:500px;
+    top:20%;
+
+    animation: cloud2 15s infinite linear;
+}
+
+.cloud3 {
+    position: absolute;
+    width:500px;
+    top:5%;
+
+    animation: cloud3 18s infinite linear;
 }
 
 @keyframes jump {
@@ -113,3 +145,29 @@
     }
 }
 
+@keyframes cloud1 {
+    0% {
+        left:-10%;
+    }
+    100% {
+        left:110%;
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        left:-10%;
+    }
+    100% {
+        left:110%;
+    }
+}
+
+@keyframes cloud3 {
+    0% {
+        left:10%;
+    }
+    100% {
+        left:110%;
+    }
+}
