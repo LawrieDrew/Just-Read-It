@@ -47,6 +47,8 @@
     position:absolute;
     width:2000px;
     left:10%;
+    right:10%;
+    
     
     animation: jump 4s;
     animation-direction: alternate;
@@ -57,7 +59,8 @@
     position:absolute;
     width:2000px;
     left:10%;
-    
+    right:10%;
+   
     animation: jump2 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -67,6 +70,8 @@
     position:absolute;
     width:2000px;
     left:10%;
+    right:10%;
+  
 
     animation: jump 3s;
     animation-direction: alternate;
@@ -77,6 +82,8 @@
     position:absolute;
     width:2000px;
     left:10%;
+    right:10%;
+    
 
     animation: jump2 4s;
     animation-direction: alternate;
@@ -87,6 +94,7 @@
     position:absolute;
     width:2000px;
     left:10%;
+    right:10%;
     
     animation: jump 2s;
     animation-direction: alternate;
