@@ -82,8 +82,6 @@ function StoryPage(props) {
             </Content>
             </Col>
             
-        
-         
         </div>
           
       );

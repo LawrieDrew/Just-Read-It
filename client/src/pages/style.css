@@ -2,6 +2,10 @@
     display: none;
 }
 
+body {
+    overflow: hidden;
+}
+
 
 
 /* HOME PAGE STYLES JOEY */
@@ -24,6 +28,7 @@
 
 .home {
     background-image: url(./BACKGROUND.png);
+    background-position: center;
     background-size: cover;
     height: 100vh;
 }
