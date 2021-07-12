@@ -7,8 +7,6 @@ import Content from "../components/Content";
 // import ListItem from "../components/ListItem";
 import Col from "../components/Col";
 import Row from "../components/Row";
-import Cloud from "../components/Cloud";
-import Card from 'react-bootstrap/Card';
 
 
 function StoryPage(props) {
@@ -39,9 +37,11 @@ function StoryPage(props) {
 
     return (
       <div className="story-page">
-        <Cloud />
         <div className="story-card">
-            <h2>{story.title}</h2> 
+        <div className="container" id="cloud">
+              <img className="cloud" src="./images/cloud.png" alt="cloud"></img>
+            </div> 
+            <h2>{story.title}</h2>
             <Col size="md-4">
             <Content>
               <div id="pageOne">
@@ -66,6 +66,9 @@ function StoryPage(props) {
             </div>
             <Col>
               <Row>
+              <div className="container" id="cloud">
+              <img className="cloud" src="./images/cloud.png" alt="cloud"></img>
+            </div>   
               <div className="answer-card">
                 <div>
                 <button className="answer-btn" size="lg">

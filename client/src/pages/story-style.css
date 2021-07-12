@@ -1,4 +1,6 @@
-
+* {
+    background-color: powderblue;
+}
 
 .hidden {
     display: none;
@@ -128,6 +130,7 @@ h2 {
 }
 
 #cloud {
+    background-color: transparent !important;
     position: absolute;
     animation: cloud 30s infinite;
     animation-direction: alternate;
