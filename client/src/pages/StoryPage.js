@@ -38,9 +38,9 @@ function StoryPage(props) {
     return (
       <div className="story-page">
         <div className="story-card">
-        <div className="container" id="cloud">
+          <div className="container" id="cloud">
               <img className="cloud" src="./images/cloud.png" alt="cloud"></img>
-            </div> 
+          </div> 
             <h2>{story.title}</h2>
             <Col size="md-4">
             <Content>
@@ -50,7 +50,7 @@ function StoryPage(props) {
               <button className="next-btn" onClick={() => increment()}>Next Page</button>
               </div>
 
-              <div className="content" id="pageTwo" className="hidden">
+              <div id="pageTwo" className="hidden">
               <h3 >{story.page2}</h3>
               <img src={"./images/"+story.page2Keyword+".png"} alt="icon"/>
               <button className="next-btn" onClick={() => increment2()}>Next Page</button>
@@ -83,6 +83,9 @@ function StoryPage(props) {
                 </div>
                 </div>
                 </Row>
+                <button className="home-btn" size="lg">
+                  Home
+                </button>
               </Col>
             
             

@@ -11,6 +11,7 @@
 img {
     width: 95%;
     padding: 10%;
+    background-color: #4CAF50;
 }
 
 #pageOne {
@@ -18,6 +19,26 @@ img {
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
+    background-color: #4CAF50;
+    border-radius: 15px;
+}
+
+#pageTwo {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #4CAF50;
+    border-radius: 15px;
+}
+
+#pageThree {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #4CAF50;
+    border-radius: 15px;
 }
 
 .answer-btn {
@@ -31,7 +52,7 @@ img {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 15px;
     transition-duration: 0.4s;
     padding: 5%;
     margin: 5%;
@@ -61,7 +82,7 @@ img {
     text-decoration: none;
     display: inline-block;
     font-size: 28px;
-    border-radius: 8px;
+    border-radius: 15px;
     transition-duration: 0.4s;
 };
 
@@ -76,28 +97,29 @@ img {
   }
 
   .home-btn {
-    background-color: #CD853F;
+    background-color: orange;
     border: 2px white;
     color: white;
     font-family: 'Lakki Reddy', cursive;
-    padding: 15px 32px;
+    padding: 3%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
+    font-size: 28px;
+    border-radius: 15px;
     transition-duration: 0.4s;
+    margin: 5%;
 };
 
 .home-btn:hover {
     background-color: #D2691E;
-}
+};
 
 .home-btn:active {
     background-color: #D2691E;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+  };
 
 
 
@@ -107,17 +129,17 @@ img {
 
 .story-card {
     background: PowderBlue !important;
-    border-radius: 5%;
+    border-radius: 15px;
     margin-bottom: 5%;
     border-right: 100px;
     border-color: powderblue
 }
 
 .story-card-body {
-    background-color: #FFF0F5;
+    background-color: lightyellow;
     width: 50%;
     height: 125%;
-    border-radius: 8px;
+    border-radius: 15px;
     margin-left: 25%;
     padding: 5%;
 }
@@ -126,6 +148,7 @@ img {
 h3 {
     font-family: 'Lakki Reddy', cursive !important;
     font-size: 35px !important;
+    background-color: #4CAF50;
     
 }
 
@@ -134,8 +157,6 @@ h2 {
     padding: 5%;
     font-size: 65px !important;
     z-index: 5;
-    border-right: 100px;
-    border-color: powderblue
 }
 
 .cloud {
