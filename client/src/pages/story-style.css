@@ -1,5 +1,9 @@
 /* all story-page styling here - disregard style.css */
 
+* {
+    background-color: powderblue;
+}
+
 .hidden {
     display: none;
 }
@@ -33,6 +37,10 @@ img {
     margin: 5%;
 }
 
+.answer-card {
+    background-color: powderblue;
+}
+
 .answer-btn:hover {
     background-color: #3e8e41;
 }
@@ -48,7 +56,7 @@ img {
     border: 2px white;
     color: white;
     font-family: 'Lakki Reddy', cursive;
-    padding: 15px 32px;
+    padding: 10%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,7 +72,7 @@ img {
 .next-btn:active {
     background-color: #0000CD;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translateY(4px)
   }
 
   .home-btn {
@@ -95,15 +103,14 @@ img {
 
 
 
-.story-page {
-    background-color: PowderBlue;
-    height: 100vh;
-}
+
 
 .story-card {
     background: PowderBlue !important;
     border-radius: 5%;
     margin-bottom: 5%;
+    border-right: 100px;
+    border-color: powderblue
 }
 
 .story-card-body {
@@ -127,10 +134,17 @@ h2 {
     padding: 5%;
     font-size: 65px !important;
     z-index: 5;
+    border-right: 100px;
+    border-color: powderblue
+}
+
+.cloud {
+    background-color: transparent;
 }
 
 #cloud {
     position: absolute;
+    background-color: transparent !important;
     animation: cloud 30s infinite;
     animation-direction: alternate;
     z-index: 10;
