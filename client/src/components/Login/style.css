@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h1{
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+    position: relative;
+    z-index: 15;
+}
+
+.register, .login {
+    position: absolute;
+    z-index: 25;
+    right: 20px;
+}
+
+.card {
+    border-radius:10%;
+    box-shadow: 2px 2px 25px white;
+}
+
+.container {
+    height: 100vh;
+}

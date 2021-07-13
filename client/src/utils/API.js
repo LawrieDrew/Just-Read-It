@@ -2,19 +2,14 @@ import axios from "axios";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    //get all users 
-    getUsers: function() {
-        return axios.get("/api/user");
-    },
-    //get specific user by id 
-    getUser: function(id) {
-        return axios.get("api/user/"+ id);
-    },
+    updateUser: function(id, userData) {
+        return axios.put("api/user/"+id, userData);
+     },
     //get all stories
     getStories: function() {
-        return axios.get("api/story/")
+        return axios.get("story/api/stories/")
     },
     getStory: function(id) {
-        return axios.get("api/story/"+id);
+        return axios.get("api/stories/"+id);
     }
 };

@@ -1,6 +1,5 @@
 module.exports = {
-    Story: require('./story'),
-    User: require('./user')
-};
-
-
+    Account: require("./account"),
+    Story: require("./story")
+  };
+  
