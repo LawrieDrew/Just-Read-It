@@ -45,7 +45,7 @@ function StoryPage(props) {
             <Col size="md-4">
             <Content>
               <div id="pageOne">
-              <h3> {story.page1}</h3>
+              <h3>{story.page1}</h3>
               <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/>
               <button className="next-btn" onClick={() => increment()}>Next Page</button>
               </div>
