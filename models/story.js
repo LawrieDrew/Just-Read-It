@@ -24,12 +24,10 @@ const storySchema = new mongoose.Schema({
             type: String,
             required: true
         },
-    page1options: [
-        {
-            type:String,
+    page1options: {
+            type:Array,
             required: true
-        }
-    ],
+        },
     page2: {
             type: String,
             required: true
@@ -38,27 +36,36 @@ const storySchema = new mongoose.Schema({
             type: String,
             required: true
         },
-        page2options: [
-            {
-                type:String,
-                required: true
-            }
-        ],
+    page2options: {
+            type:Array,
+            required: true
+        },
     page3: {
             type: String,
             required: true
         },
-    page3Keyword: {
-            type: String,
+    page3options: {
+            type:Array,
             required: true
         },
-        page3options: [
+    page3Keyword: 
             {
                 type:String,
                 required: true
-            }
-            
-        ]
+            },
+    page4: {
+            type: String,
+            required: true
+        },
+    page4options: {
+            type:Array,
+            required: true
+        },
+    page4Keyword: 
+            {
+                type:String,
+                required: true
+            },
 
 });
 

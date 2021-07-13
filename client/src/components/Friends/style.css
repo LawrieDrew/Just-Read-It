@@ -1,0 +1,71 @@
+#kid1 {
+    position:absolute;
+    width:2000px;
+    left:4%;
+    animation: jump 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#kid2 {
+    position:absolute;
+    width:2000px;
+    left:-20%;
+    animation: jump2 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#kid3 {
+    position:absolute;
+    width:2000px;
+    left:-8%;
+    bottom: 0%;
+    
+    animation: jump 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+#owl {
+    position:absolute;
+    left:80%;
+    bottom: 20%;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 2s forwards;
+    animation-delay: 0s;
+   
+}
+
+#owl img {
+    width: 625px;
+}
+
+
+@keyframes jump {
+    0% {
+        top:0%;
+    }
+    100% {
+        top:20%;
+    }
+}
+
+@keyframes jump2 {
+    0% {
+        top:5%;
+    }
+    100% {
+        top:15%;
+    }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 50%; }
+}
+
+@keyframes slide {
+    100% { left: 50%; }
+}

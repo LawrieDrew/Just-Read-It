@@ -1,0 +1,94 @@
+.hidden {
+    display: none;
+}
+
+img {
+    width: 200px
+}
+
+#Blurb{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  background-color: white;
+  color:lightblue;
+  padding:2rem;
+  position: absolute;
+  z-index: 15;
+  width: 25%;
+  text-align: center;
+  border-radius: 15px;
+  left: 50%;
+  top: 50%;
+}
+
+.bookContainer {
+    width: 100vw;
+}
+
+.books {
+    -webkit-animation: spin 2s linear;
+    animation: spin 2s linear;
+    
+}
+
+.books:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+
+}
+
+#soundBtn {
+  width:50px;
+}
+#soundBtn:hover {
+  cursor: pointer;
+}
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }

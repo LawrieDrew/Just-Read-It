@@ -1,0 +1,12 @@
+body {
+    background-color: #8fd3fe;
+    background-image: url("/images/landing/hills.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 100vw;
+}
+
+
+
+h1 {
+    text-align: center;
+}
