@@ -1,6 +1,4 @@
-* {
-    background-color: powderblue;
-}
+/* all story-page styling here - disregard style.css */
 
 .hidden {
     display: none;
@@ -8,6 +6,7 @@
 
 img {
     width: 95%;
+    padding: 10%;
 }
 
 #pageOne {
@@ -22,7 +21,7 @@ img {
     border: 2px white;
     color: white;
     font-family: 'Lakki Reddy', cursive;
-    font-size: 24px !important;
+    font-size: 35px !important;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -53,7 +52,7 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 28px;
     border-radius: 8px;
     transition-duration: 0.4s;
 };
@@ -119,18 +118,18 @@ img {
 
 h3 {
     font-family: 'Lakki Reddy', cursive !important;
+    font-size: 35px !important;
     
 }
 
 h2 {
     font-family: 'Lakki Reddy', cursive !important;
     padding: 5%;
-    font-size: 45px !important;
+    font-size: 65px !important;
     z-index: 5;
 }
 
 #cloud {
-    background-color: transparent !important;
     position: absolute;
     animation: cloud 30s infinite;
     animation-direction: alternate;
@@ -141,9 +140,6 @@ h2 {
   
   @keyframes cloud {
       0% {left: 0%}
-      25% {left: 25%}
-      50% {left: 50%}
-      75% {left: 75%}
       100% {left: 100%}
 }
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import API from "../utils/API";
-import "./style.css";
+import "./story-style.css";
 import Content from "../components/Content";
 // import List from "../components/List";
 // import ListItem from "../components/ListItem";
