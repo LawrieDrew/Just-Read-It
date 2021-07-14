@@ -80,11 +80,11 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page1Keyword) {
       console.log("success")
-      window.alert("Correct!!")
+      
       answerCorrect();
       document.getElementById("nextbtn1").classList.remove("hidden")
     } else {
-      window.alert("Try again!")
+      
       tryAgain();
     }
   }
@@ -93,11 +93,11 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page2Keyword) {
       console.log("success")
-      window.alert("Correct!!")
+      
       answerCorrect();
       document.getElementById("nextbtn2").classList.remove("hidden")
     } else {
-      window.alert("try again!")
+      
       tryAgain();
     }
   }
@@ -106,11 +106,11 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page3Keyword) {
       console.log("success")
-      window.alert("Correct!!")
+      
       answerCorrect();
       document.getElementById("nextbtn3").classList.remove("hidden")
     } else {
-      window.alert("try again!")
+      
       tryAgain();
     }
   }
@@ -120,10 +120,10 @@ function StoryRoute(props) {
     if(btnValue === story.page4Keyword) {
       console.log("success")
       answerCorrect()
-      window.alert("Congrats you've finished the story!")
+      
       document.getElementById("nextbtn4").classList.remove("hidden")
     } else {
-      window.alert("try again!")
+      
       tryAgain();
     }
   }
