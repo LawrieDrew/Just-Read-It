@@ -74,7 +74,7 @@ In our first version, users are able to register and login to their own unique p
 
 ### Contact
 
-Inquiries can be sent to [@.com](mailto:@.com)
+Inquiries can be sent to [laurenn.drew@gmail.com](mailto:laurenn.drew@gmail.com)
 
 ## Contributing / Issues
 
