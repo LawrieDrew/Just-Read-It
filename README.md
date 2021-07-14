@@ -33,14 +33,14 @@ With amusing illustrations, frolicking animations, and lively sounds, Just Read 
 
 - To run locally:
 
-  - Type into command line:
+  Type into command line:
   - npm i
   - npm run seed
 
-  - Type into second, separate command line:
+  Type into second, separate command line:
   - mongod
 
-  - Finally, run into first command line:
+  Finally, run into first command line:
   - npm start
 
 ---
