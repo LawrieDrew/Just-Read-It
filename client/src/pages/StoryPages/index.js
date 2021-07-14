@@ -136,13 +136,14 @@ function StoryRoute(props) {
             <Content>
               <div id="pageOne">
               <h3>{story.page1}</h3>
-              <img src="./images/sound.png" alt="sound"/>
-              <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/>
+              {/* <img src="./images/sound.png" alt="sound"/> */}
+              {/* <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/> */}
+              <img src={"http://localhost:3000/images/"+story.page1Keyword+".png"} />
               {/* sound */}
               
-              <audio id="storyPrompt" src={""} alt="audio"></audio>
-              <audio id="tryAgain" src={""} alt="audio"></audio>
-              <audio id="answerCorrect" src={"./audio/"+story.page1Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page1Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page1Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
               <button onClick={() => storyPrompt()}>SOUND BTN</button>
       
               {story.page1options ? (
@@ -169,11 +170,11 @@ function StoryRoute(props) {
 
               <div id="pageTwo" className="hidden">
               <h3 >{story.page2}</h3>
-              <img src={"./images/"+story.page2Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page2Keyword+".png"} />
               
-              <audio id="storyPrompt" src={"../../public/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
-              <audio id="tryAgain" src={"../../public/audio/tryagain.mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"../../public/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
               <button onClick={() => storyPrompt()}>SOUND BTN</button>
               
               {story.page2options ? (
@@ -198,11 +199,11 @@ function StoryRoute(props) {
               
               <div id="pageThree" className="hidden">
               <h3 >{story.page3}</h3>
-              <img src={"./images/"+story.page3Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page3Keyword+".png"} />
               
-              <audio id="storyPrompt" src={"./audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
-              <audio id="tryAgain" src={"./audio/tryagain.mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"./audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
               <button onClick={() => storyPrompt()}>SOUND BTN</button>
               
               {story.page3options ? (
@@ -224,11 +225,11 @@ function StoryRoute(props) {
 
               <div id="pageFour" className="hidden">
               <h3 >{story.page4}</h3>
-              <img src={"./images/"+story.page4Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page4Keyword+".png"} />
 
-              <audio id="storyPrompt" src={"./audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
-              <audio id="tryAgain" src={"./audio/tryagain.mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"./audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
               <button onClick={() => storyPrompt()}>SOUND BTN</button>
 
               {story.page4options ? (

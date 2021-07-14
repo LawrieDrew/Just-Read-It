@@ -12,9 +12,11 @@ function ProtectedRoute() {
 		<div >
 				<h1>Welcome {user.username}!</h1>
 				<BookCard/>
+				
 		</div>
+		
 	)
 
 }
 
-export default ProtectedRoute
+export default ProtectedRoute;
