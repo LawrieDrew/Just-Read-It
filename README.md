@@ -47,6 +47,29 @@ With amusing illustrations, frolicking animations, and lively sounds, Just Read 
 
 ## Usage
 
+Upon first opening the app, the user will prompted to login. One can use their login information at this point to continue, or click on the Register button on the right hand corner to create a user profile.
+
+// GIF //
+
+On the registration screen, there is a form prompting the user for a username and password as their new login information.
+
+// GIF //
+
+After submitting either of the previous forms, the user is taken to the homepage, where they will see all available stories, represented by floating books. Upon first signing up, only one story is available, but as the user progresses more stories will appear and will be accessible. Hovering over the books also provides a brief synopsis of the story.
+
+// GIF //
+
+Upon clicking on a story, the user will be brought to the first questions. The user must choose the appropriate response to the questions provided. Once the correct question is chosen, the next button will appear, which upon click will take the user to the next page.
+
+// GIF //
+
+Upon completing the final page of the book, the next button will become a "Complete Story" button. Once clicked, the user will be brought back to the main page. A new book will also appear if the user finished the previous story for the first time, indicating that the user has "leveled up" and can now access the next new story.
+
+// GIF // 
+
+At any point, the user can log off using the log off button in the top right corner. This button will return the user to the original page, giving them the choice to login or register again.
+
+// GIF //
 
 ---
 
