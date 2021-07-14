@@ -131,7 +131,7 @@ function StoryRoute(props) {
 
               <div id="pageTwo" className="hidden">
               <h3 >{story.page2}</h3>
-              <img src={"./images/"+story.page2Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page2Keyword+".png"} alt="icon"/>
               {story.page2options ? (
                                     
                   <div>
@@ -154,7 +154,7 @@ function StoryRoute(props) {
               
               <div id="pageThree" className="hidden">
               <h3 >{story.page3}</h3>
-              <img src={"./images/"+story.page3Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page3Keyword+".png"} alt="icon"/>
               {story.page3options ? (
                                     
                   <div>
@@ -174,7 +174,7 @@ function StoryRoute(props) {
 
               <div id="pageFour" className="hidden">
               <h3 >{story.page4}</h3>
-              <img src={"./images/"+story.page4Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page4Keyword+".png"} alt="icon"/>
               {story.page4options ? (
                                     
                   <div>
