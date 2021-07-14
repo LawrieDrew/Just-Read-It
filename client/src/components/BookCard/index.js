@@ -6,9 +6,12 @@ import { Link } from "react-router-dom"
 import Friends from "../Friends";
 
 function BookCard() {
-    var chapter1 = document.getElementById('chapter1');
-    var chapter2 = document.getElementById('chapter2');
-    var chapter3 = document.getElementById('chapter3');
+
+     function Stop() {
+         var audie = document.getElementById("homepageAudio");
+                 audie.animate({volume: 0}, 400);
+                
+           }
 
     const { user } = useContext(UserContext);  
     const [stories, setStories] = useState([])
@@ -24,10 +27,6 @@ function BookCard() {
               setStories(res.data)
           )
           .catch(err => console.log(err));
-      }
-
-      function chapter () {
-        console.log("chapter");
       }
 
       let userLevel = user.level
@@ -59,7 +58,7 @@ function BookCard() {
                             pathname: `story/${userStories._id}`
                             }}>
                         <div className="books">
-                        <img className="rounded mx-auto d-block" onMouseOver={() => upDateBlurb(userStories.title, userStories.synopsis)}  src="./images/book.png" alt="book"/>
+                        <img className="rounded mx-auto d-block" onClick={Stop()} onMouseOver={() => upDateBlurb(userStories.title, userStories.synopsis)}  src="./images/book.png" alt="book"/>
                         
                         </div>
                         </Link>
@@ -75,7 +74,15 @@ function BookCard() {
 
                 <Friends/>
             
-            </div>                 
+            </div>      
+
+            <div>
+					<iframe src="/audio/homepage.mp3" allow="autoPlay" >
+					</iframe> 
+					<audio loop autoPlay id="homepageAudio">
+						<source src="/audio/homepage.mp3" type="audio/filetype" />
+					</audio>
+			</div>          
           </div>
       )
   
