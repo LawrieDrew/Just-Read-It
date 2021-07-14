@@ -105,7 +105,7 @@ function StoryRoute(props) {
               <div id="pageOne">
               <h3>{story.page1}</h3>
               <img src="./images/sound.png" alt="sound"/>
-              <img src={"../../public/images/"+story.page1Keyword+".png"} alt="icon"/>
+              <img src={"http://localhost:3000/images/"+story.page1Keyword+".png"} alt="icon"/>
 
               {story.page1options ? (
                                     
