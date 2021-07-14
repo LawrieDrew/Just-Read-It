@@ -12,6 +12,21 @@ function ProtectedRoute() {
 				
 				<h1>Welcome {user.username}!</h1>
 				<BookCard/>
+				{/* <div>
+					<iframe src="/audio/homepage.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+					</iframe> 
+					<audio autoplay loop id="playAudio">
+						<source src="/audio/homepage.mp3"/>
+					</audio>			
+				</div> */}
+
+				<div>
+					<iframe src="/audio/homepage.mp3" allow="autoPlay">
+					</iframe> 
+					<audio loop autoPlay>
+						<source src="/audio/homepage.mp3" type="audio/filetype"/>
+					</audio>
+				</div>
 				
 		</div>
 		
