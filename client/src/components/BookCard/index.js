@@ -10,7 +10,6 @@ function BookCard() {
      function Stop() {
          var audie = document.getElementById("homepageAudio");
                  audie.animate({volume: 0}, 400);
-                
            }
 
     const { user } = useContext(UserContext);  
