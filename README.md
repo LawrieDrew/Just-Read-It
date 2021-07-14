@@ -10,6 +10,8 @@ Just Read It is an exciting new app designed to help children learn and practice
 
 In our first version, users are able to register and login to their own unique profile. Upon first registering, the user has access to one introductory story, which involves a reading fill-in-the-blank game. Once this game is completed, the second story will become unlocked for play, and upon completing the second story, a third and final story will be unlocked. This feature encourages the child to become motivated by the game's progress and thus practice reading more and more.
 
+With amusing illustrations, frolicking animations, and lively sounds, Just Read It creates an energizing and pleasurable experience for any child learning to read on their own.
+
 ---
 
 ## Table of contents
@@ -96,5 +98,8 @@ Report issues by selecting the [issues](https://github.com/LawrieDrew/Just-Read-
 
 ## Technologies
 
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
 - [React](https://reactjs.org/)
+- [Adobe Illustrator](https://www.adobe.com/)
