@@ -52,7 +52,7 @@ const storySeed = [
         synopsis: "Head home to your family after a long day at school with this advanced story",
         level: 3,
         page1: "I get _______, eat a _______, and start my ________ right away.",
-        page1Keyword: "home, snack, homework",
+        page1Keyword: " ",
         page1options: ["home, snack, homework", "horse, book, nap", "dessert, crayon, tv show"],
         page2: "I help Daddy set the ________ for dinner. Mommy gets home from work. Daddy made _________.",
         page2Keyword: "table, spaghetti",

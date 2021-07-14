@@ -23,6 +23,30 @@ function StoryRoute(props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    //joey sound stuff
+    function storyPrompt() {
+      console.log("storyprompt working");
+      var storyPrompt = document.getElementById('storyPrompt');
+        storyPrompt.currentTime = 0;
+        storyPrompt.play(); 
+    }
+
+    function tryAgain() {
+      console.log("tryagain working");
+      var tryAgain = document.getElementById('tryAgain');
+        tryAgain.currentTime = 0;
+        tryAgain.play(); 
+    }
+    function answerCorrect() {
+      console.log("answer working");
+      var answerCorrect = document.getElementById('answerCorrect');
+        answerCorrect.currentTime = 0;
+        answerCorrect.play(); 
+    }
+    //end sound stuff
+
+
+
 	  function increment() {
 		document.getElementById("pageOne").classList.add("hidden");
 		document.getElementById("pageTwo").classList.remove("hidden");
@@ -57,9 +81,11 @@ function StoryRoute(props) {
     if(btnValue === story.page1Keyword) {
       console.log("success")
       window.alert("Correct!!")
+      answerCorrect();
       document.getElementById("nextbtn1").classList.remove("hidden")
     } else {
       window.alert("Try again!")
+      tryAgain();
     }
   }
   function btn2Press(e) {
@@ -68,9 +94,11 @@ function StoryRoute(props) {
     if(btnValue === story.page2Keyword) {
       console.log("success")
       window.alert("Correct!!")
+      answerCorrect();
       document.getElementById("nextbtn2").classList.remove("hidden")
     } else {
       window.alert("try again!")
+      tryAgain();
     }
   }
   function btn3Press(e) {
@@ -79,9 +107,11 @@ function StoryRoute(props) {
     if(btnValue === story.page3Keyword) {
       console.log("success")
       window.alert("Correct!!")
+      answerCorrect();
       document.getElementById("nextbtn3").classList.remove("hidden")
     } else {
       window.alert("try again!")
+      tryAgain();
     }
   }
   function btn4Press(e) {
@@ -89,10 +119,12 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page4Keyword) {
       console.log("success")
+      answerCorrect()
       window.alert("Congrats you've finished the story!")
       document.getElementById("nextbtn4").classList.remove("hidden")
     } else {
       window.alert("try again!")
+      tryAgain();
     }
   }
 
@@ -105,8 +137,14 @@ function StoryRoute(props) {
               <div id="pageOne">
               <h3>{story.page1}</h3>
               <img src="./images/sound.png" alt="sound"/>
-              <img src={"../../public/images/"+story.page1Keyword+".png"} alt="icon"/>
-
+              <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/>
+              {/* sound */}
+              
+              <audio id="storyPrompt" src={""} alt="audio"></audio>
+              <audio id="tryAgain" src={""} alt="audio"></audio>
+              <audio id="answerCorrect" src={"./audio/"+story.page1Keyword+"correct.mp3"} alt="audio"></audio>
+              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+      
               {story.page1options ? (
                                     
                     <div>
@@ -132,6 +170,12 @@ function StoryRoute(props) {
               <div id="pageTwo" className="hidden">
               <h3 >{story.page2}</h3>
               <img src={"./images/"+story.page2Keyword+".png"} alt="icon"/>
+              
+              <audio id="storyPrompt" src={"../../public/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"../../public/audio/tryagain.mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"../../public/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
+              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+              
               {story.page2options ? (
                                     
                   <div>
@@ -155,6 +199,12 @@ function StoryRoute(props) {
               <div id="pageThree" className="hidden">
               <h3 >{story.page3}</h3>
               <img src={"./images/"+story.page3Keyword+".png"} alt="icon"/>
+              
+              <audio id="storyPrompt" src={"./audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"./audio/tryagain.mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"./audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
+              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+              
               {story.page3options ? (
                                     
                   <div>
@@ -175,6 +225,12 @@ function StoryRoute(props) {
               <div id="pageFour" className="hidden">
               <h3 >{story.page4}</h3>
               <img src={"./images/"+story.page4Keyword+".png"} alt="icon"/>
+
+              <audio id="storyPrompt" src={"./audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
+              <audio id="tryAgain" src={"./audio/tryagain.mp3"} alt="audio"></audio>
+              <audio id="answerCorrect" src={"./audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
+              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+
               {story.page4options ? (
                                     
                   <div>
