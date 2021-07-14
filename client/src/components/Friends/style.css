@@ -29,7 +29,8 @@
 }
 
 #owl {
-    position:absolute;
+    
+    position:relative;
     left:80%;
     bottom: 20%;
     -webkit-animation: slide 2s forwards;
@@ -42,6 +43,27 @@
 #owl img {
     width: 625px;
 }
+
+@media only screen and (max-width: 1366px) {
+    #kid1, #kid2, #kid3 {
+      display: none;
+    }
+
+    #owl {
+        position:absolute;
+        left: -15%;
+        bottom: 0%;
+        -webkit-animation: slideMobile 2s forwards;
+        -webkit-animation-delay: 2s;
+        animation: slideMobile 2s forwards;
+        animation-delay: 0s;
+    }
+
+    #owl img {
+        width: 400px
+    }
+
+  }
 
 
 @keyframes jump {
@@ -69,3 +91,14 @@
 @keyframes slide {
     100% { left: 50%; }
 }
+
+
+@-webkit-keyframes slideMobile {
+    100% { bottom: 25%; }
+}
+
+@keyframes slideMobile {
+    100% { bottom: 25%; }
+}
+
+

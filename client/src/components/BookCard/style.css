@@ -2,9 +2,7 @@
     display: none;
 }
 
-img {
-    width: 200px
-}
+
 
 #Blurb{
   -webkit-animation-name: fadeIn;
@@ -16,7 +14,7 @@ img {
   z-index: 15;
   width: 25%;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 15px;
   left: 50%;
   top: 50%;
 }
@@ -28,6 +26,7 @@ img {
 .books {
     -webkit-animation: spin 2s linear;
     animation: spin 2s linear;
+    padding: 20px;
     
 }
 
@@ -92,3 +91,24 @@ img {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
  }
+
+ @media only screen and (max-width: 1366px) {
+  #Blurb {
+    width: 80%;
+    left:10%;
+    top:50%;
+    overflow: hidden;
+    font-size: 15px;
+  }
+
+  #Blurb img {
+    display: none;
+  }
+  
+  .books img {
+    width: 100%;
+  }
+
+}
+
+

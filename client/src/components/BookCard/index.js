@@ -54,7 +54,7 @@ function BookCard() {
               <div id="bookshelf" className="container">
                 {userStories.length ? (
                                     
-                    <div className="d-flex justify-content-center flex-wrap ">
+                    <div className="d-flex justify-content-center flex-nowrap ">
                     {userStories.map(userStories => (
                         <Link to={{
                             pathname: `story/${userStories._id}`
