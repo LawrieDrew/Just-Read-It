@@ -24,13 +24,6 @@ function StoryRoute(props) {
     }, [])
 
     //joey sound stuff
-    function storyPrompt() {
-      console.log("storyprompt working");
-      var storyPrompt = document.getElementById('storyPrompt');
-        storyPrompt.currentTime = 0;
-        storyPrompt.play(); 
-    }
-
     function tryAgain() {
       console.log("tryagain working");
       var tryAgain = document.getElementById('tryAgain');
@@ -42,6 +35,55 @@ function StoryRoute(props) {
       var answerCorrect = document.getElementById('answerCorrect');
         answerCorrect.currentTime = 0;
         answerCorrect.play(); 
+    }
+
+    function answerCorrect2() {
+      console.log("answer working");
+      var answerCorrect = document.getElementById('answerCorrect2');
+        answerCorrect.currentTime = 0;
+        answerCorrect.play(); 
+    }
+
+    function answerCorrect3() {
+      console.log("answer working");
+      var answerCorrect = document.getElementById('answerCorrect3');
+        answerCorrect.currentTime = 0;
+        answerCorrect.play(); 
+    }
+
+    function answerCorrect4() {
+      console.log("answer working");
+      var answerCorrect = document.getElementById('answerCorrect4');
+        answerCorrect.currentTime = 0;
+        answerCorrect.play(); 
+    }
+
+    function storyPrompt() {
+      console.log("storyprompt working");
+      var storyPrompt = document.getElementById('storyPrompt');
+        storyPrompt.currentTime = 0;
+        storyPrompt.play(); 
+    }
+
+    function storyPrompt2() {
+      console.log("storyprompt working");
+      var storyPrompt = document.getElementById('storyPrompt2');
+        storyPrompt.currentTime = 0;
+        storyPrompt.play(); 
+    }
+
+    function storyPrompt3() {
+      console.log("storyprompt working");
+      var storyPrompt = document.getElementById('storyPrompt3');
+        storyPrompt.currentTime = 0;
+        storyPrompt.play(); 
+    }
+
+    function storyPrompt4() {
+      console.log("storyprompt working");
+      var storyPrompt = document.getElementById('storyPrompt4');
+        storyPrompt.currentTime = 0;
+        storyPrompt.play(); 
     }
     //end sound stuff
 
@@ -94,7 +136,7 @@ function StoryRoute(props) {
     if(btnValue === story.page2Keyword) {
       console.log("success")
       
-      answerCorrect();
+      answerCorrect2();
       document.getElementById("nextbtn2").classList.remove("hidden")
     } else {
       
@@ -107,7 +149,7 @@ function StoryRoute(props) {
     if(btnValue === story.page3Keyword) {
       console.log("success")
       
-      answerCorrect();
+      answerCorrect3();
       document.getElementById("nextbtn3").classList.remove("hidden")
     } else {
       
@@ -119,7 +161,7 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page4Keyword) {
       console.log("success")
-      answerCorrect()
+      answerCorrect4()
       
       document.getElementById("nextbtn4").classList.remove("hidden")
     } else {
@@ -136,8 +178,7 @@ function StoryRoute(props) {
             <Content>
               <div id="pageOne">
               <h3>{story.page1}</h3>
-              {/* <img src="./images/sound.png" alt="sound"/> */}
-              {/* <img src={"./images/"+story.page1Keyword+".png"} alt="icon"/> */}
+              
               <img src={"http://localhost:3000/images/"+story.page1Keyword+".png"} />
               {/* sound */}
               
@@ -172,10 +213,10 @@ function StoryRoute(props) {
               <h3 >{story.page2}</h3>
               <img src={"http://localhost:3000/images/"+story.page2Keyword+".png"} />
               
-              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt2" src={"http://localhost:3000/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect2" src={"http://localhost:3000/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
               <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
-              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+              <button onClick={() => storyPrompt2()}>SOUND BTN</button>
               
               {story.page2options ? (
                                     
@@ -201,10 +242,10 @@ function StoryRoute(props) {
               <h3 >{story.page3}</h3>
               <img src={"http://localhost:3000/images/"+story.page3Keyword+".png"} />
               
-              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt3" src={"http://localhost:3000/audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect3" src={"http://localhost:3000/audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
               <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
-              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+              <button onClick={() => storyPrompt3()}>SOUND BTN</button>
               
               {story.page3options ? (
                                     
@@ -227,10 +268,10 @@ function StoryRoute(props) {
               <h3 >{story.page4}</h3>
               <img src={"http://localhost:3000/images/"+story.page4Keyword+".png"} />
 
-              <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
-              <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
+              <audio id="storyPrompt4" src={"http://localhost:3000/audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
+              <audio id="answerCorrect4" src={"http://localhost:3000/audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
               <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
-              <button onClick={() => storyPrompt()}>SOUND BTN</button>
+              <button onClick={() => storyPrompt4()}>SOUND BTN</button>
 
               {story.page4options ? (
                                     
