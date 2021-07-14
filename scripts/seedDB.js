@@ -23,8 +23,8 @@ const storySeed = [
         page2options: ["toys", "books", "snacks"],
         page2Keyword: "books",
         page3: "Say _________ to my parents and dog!",
-        page3Keyword: "good bye" ,
-        page3options: ["good bye", "hello", "hasta la vista"],
+        page3Keyword: "goodbye" ,
+        page3options: ["goodbye", "hello", "hasta la vista"],
         page4: "Wait for the big _______ bus.",
         page4Keyword: "yellow" ,
         page4options: ["blue", "yellow", "red"]
