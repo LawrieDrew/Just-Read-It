@@ -29,13 +29,17 @@ In our first version, users are able to register and login to their own unique p
 
 ## Installation
 
-- Clone repo
-- Open integrated terminal on the root directory
-- Install dependencies :
+- To run locally:
 
-```
-npm i
-```
+  - Type into command line:
+  - npm i
+  - npm run seed
+
+  - Type into second, separate command line:
+  - mongod
+
+  - Finally, run into first command line:
+  - npm start
 
 ---
 
