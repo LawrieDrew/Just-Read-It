@@ -1,11 +1,12 @@
 #kid1 {
     position:absolute;
     width:2000px;
-    left:4%;
+    left:-8%;
     animation: jump 4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
 
 #kid2 {
     position:absolute;
@@ -19,10 +20,8 @@
 #kid3 {
     position:absolute;
     width:2000px;
-    left:-8%;
-    bottom: 0%;
-    
-    animation: jump 3s;
+    left:4%;
+    animation: jump1 3s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     
@@ -66,12 +65,20 @@
   }
 
 
-@keyframes jump {
+@keyframes jump1 {
     0% {
-        top:0%;
+        top:10%;
     }
     100% {
         top:20%;
+    }
+}
+@keyframes jump {
+    0% {
+        top:-10%;
+    }
+    100% {
+        top:10%;
     }
 }
 

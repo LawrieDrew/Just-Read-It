@@ -3,5 +3,88 @@
 }
 
 img {
-    width: 200px
+    width: 200px;
+    margin: 5%;
 }
+
+#pageOne, #pageTwo, #pageThree, #pageFour {
+    
+    border-radius: 15px;
+}
+
+.valueButton {
+    background-color: #4CAF50;
+    border: 2px white;
+    color: white;
+    font-family: ‘Lakki Reddy’, cursive;
+    font-size: 40px;
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    margin: 5%;
+}
+
+.valueButton:hover {
+    background-color: #3E8E41;
+}
+.valueButton:active {
+    background-color: #3E8E41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    font: black;
+  }
+
+#nextbtn1, #nextbtn2, #nextbtn3, #nextbtn4 {
+
+    background-color: #4169E1;
+    border: 2px white;
+    color: white;
+    font-family: ‘Lakki Reddy’, cursive;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+};
+
+#cloud {
+    position:absolute;
+    -webkit-animation: cloud 2s forwards;
+    -webkit-animation-delay: 2s;
+    animation: cloud 2s forwards;
+    animation-delay: 0s;
+    z-index: 10;
+  }
+
+  @keyframes cloud {
+    0% {
+        left:20%;
+    }
+    100% {
+        left:30%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+ #nextbtn1, #nextbtn2, #nextbtn3, #nextbtn4 { 
+        padding:4%;
+        font-size: 25px;
+    }
+  
+    .valueButton{
+        padding:4%;
+        font-size: 22px;
+    }
+    #Blurb img {
+      display: none;
+    }
+    
+    .books img {
+      width: 100%;
+    }
+  
+  }
