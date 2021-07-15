@@ -1,0 +1,36 @@
+.celebrate {
+        position:absolute;
+        z-index: 15;
+        left: -15%;
+        bottom: -100%;
+        -webkit-animation: slideMobile 2s forwards;
+        -webkit-animation-delay: 0s;
+        animation: slideMobile 2s forwards;
+        animation-delay: 0s;
+    }
+
+.celebrate img {
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+@-webkit-keyframes slideMobile {
+    100% { bottom: 25%; }
+}
+
+@keyframes slideMobile {
+    100% { bottom: 25%; }
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+    #celebrate img {
+        width: 100px
+    }
+
+  }
+

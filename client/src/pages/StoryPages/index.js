@@ -5,6 +5,7 @@ import "./style.css";
 import Col from "../../components/Col";
 import Content from "../../components/Content";
 import {UserContext} from "../../utils/UserContext";
+import Celebrate from "../../components/Celebrate";
 
 
 
@@ -84,6 +85,8 @@ function StoryRoute(props) {
     let btnValue=e.target.value;
     if(btnValue === story.page4Keyword) {
       document.getElementById("nextbtn4").classList.remove("hidden")
+      document.getElementById("celebrate").classList.remove("hidden")
+      document.getElementById("celebrate").classList.add("celebrate")
     } else {
       window.alert("try again!")
     }
@@ -104,13 +107,8 @@ function StoryRoute(props) {
                                         
                         <div>
                           {story.page1options.map(page1options => (
-                              
                             
                               <button className="valueButton" onClick={btn1Press} value={page1options}>{page1options}</button>
-                            
-                    
-
-                            
                               
                           ))}
                         </div>
@@ -192,15 +190,15 @@ function StoryRoute(props) {
                           )}
           
                   <button  className="hidden" id="nextbtn4" onClick={() => increment4()}>Complete Story!</button>
+                  <Celebrate/>
+                  
                 </Content>
-
               </div>
               
-
             
             </Col>
             
-        
+            
          
         </div>
           

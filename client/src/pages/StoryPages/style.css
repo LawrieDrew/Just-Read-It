@@ -8,7 +8,7 @@ img {
 }
 
 #pageOne, #pageTwo, #pageThree, #pageFour {
-    
+   
     border-radius: 15px;
 }
 
@@ -20,6 +20,7 @@ img {
     font-size: 40px;
     padding: 35px;
     text-align: center;
+    outline: none;
     text-decoration: none;
     display: inline-block;
     border-radius: 15px;
@@ -38,7 +39,7 @@ img {
   }
 
 #nextbtn1, #nextbtn2, #nextbtn3, #nextbtn4 {
-
+    outline: none;
     background-color: #4169E1;
     border: 2px white;
     color: white;
