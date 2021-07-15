@@ -19,7 +19,6 @@ function Friends() {
                 </div>
             </div>
         </section>
-       
     )
 }
 

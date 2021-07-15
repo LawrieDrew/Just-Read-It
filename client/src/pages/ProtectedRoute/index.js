@@ -10,7 +10,7 @@ function ProtectedRoute() {
 	const { user } = useContext(UserContext)
 	return (
 		<div className="wrapper">
-				<h1>Welcome {user.username}!</h1>
+				<h1>Hiya {user.username}!</h1>
 				<BookCard/>
 		</div>
 	)

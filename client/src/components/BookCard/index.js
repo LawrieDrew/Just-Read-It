@@ -36,7 +36,6 @@ function BookCard() {
       
         `
 
-        // REMOVED PLAY BTN <img id="soundBtn" src="./images/sound.png"/> 
      }  
 
       return (
@@ -58,7 +57,7 @@ function BookCard() {
                         
                     ))}
                     
-                    <h3 id="Blurb" className="animated fadeIn" >Welcome to Just Read it!</h3>
+                    <h3 id="Blurb" className="animated fadeIn" >Hi there! Scroll over a book to learn more. Click on a book to start reading!</h3>
                     </div>
                    
                 ) : (

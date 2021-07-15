@@ -12,6 +12,7 @@ import { Container } from "../components/Grid";
 import ProtectedRoute from "./ProtectedRoute";
 import StoryRoute from "./StoryPages";
 import { UserContext } from "../utils/UserContext";
+import Logo from '../components/Logo';
 
 //Now we have all the stuff we need .. let's render some components with the Router
 const AppRouter = () => {
@@ -20,6 +21,7 @@ const AppRouter = () => {
         <Router>
             <div>
                 <Nav className="App-header" />
+                <Logo/>
                 <Container>
                     {!user
                         ? <Switch>
