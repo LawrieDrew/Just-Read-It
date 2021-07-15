@@ -6,7 +6,7 @@ function Celebrate() {
 
           
                 <div id="celebrate" className="hidden">
-                <img src="http://localhost:3000/images/celebrate.png" alt="animal" />
+                <img src="https://cryptic-shore-57916.herokuapp.com/images/celebrate.png" alt="animal" />
                 </div>
         
 

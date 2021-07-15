@@ -177,13 +177,13 @@ function StoryRoute(props) {
              <div id="pageOne">
                   <Content >
                   
-                  <h3><img onClick={() => storyPrompt()} id="soundBtn" src="http://localhost:3000/images/sound.png"/>{story.page1}</h3>
+                  <h3><img onClick={() => storyPrompt()} id="soundBtn" src="https://cryptic-shore-57916.herokuapp.com/images/sound.png"/>{story.page1}</h3>
                     
-                  <img src={"http://localhost:3000/images/"+story.page1Keyword+".png"} alt="icon"/>
+                  <img src={"https://cryptic-shore-57916.herokuapp.com/images/"+story.page1Keyword+".png"} alt="icon"/>
 
-                  <audio id="storyPrompt" src={"http://localhost:3000/audio/"+story.page1Keyword+".mp3"} alt="audio"></audio>
-                  <audio id="answerCorrect" src={"http://localhost:3000/audio/"+story.page1Keyword+"correct.mp3"} alt="audio"></audio>
-                  <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
+                  <audio id="storyPrompt" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page1Keyword+".mp3"} alt="audio"></audio>
+                  <audio id="answerCorrect" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page1Keyword+"correct.mp3"} alt="audio"></audio>
+                  <audio id="tryAgain" src={"https://cryptic-shore-57916.herokuapp.com/audio/tryagain.mp3"} alt="audio"></audio>
                   
 
                   {story.page1options ? (
@@ -206,12 +206,12 @@ function StoryRoute(props) {
                 
               <div id="pageTwo" className="hidden">
               <Content >
-                  <h3><img onClick={() => storyPrompt2()} id="soundBtn" src="http://localhost:3000/images/sound.png"/>{story.page2}</h3>
-                  <img src={"http://localhost:3000/images/"+story.page2Keyword+".png"} alt="icon"/>
+                  <h3><img onClick={() => storyPrompt2()} id="soundBtn" src="https://cryptic-shore-57916.herokuapp.com/images/sound.png"/>{story.page2}</h3>
+                  <img src={"https://cryptic-shore-57916.herokuapp.com/images/"+story.page2Keyword+".png"} alt="icon"/>
 
-                  <audio id="storyPrompt2" src={"http://localhost:3000/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
-                  <audio id="answerCorrect2" src={"http://localhost:3000/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
-                  <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
+                  <audio id="storyPrompt2" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page2Keyword+".mp3"} alt="audio"></audio>
+                  <audio id="answerCorrect2" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page2Keyword+"correct.mp3"} alt="audio"></audio>
+                  <audio id="tryAgain" src={"https://cryptic-shore-57916.herokuapp.com/audio/tryagain.mp3"} alt="audio"></audio>
 
                   {story.page2options ? (
                                         
@@ -237,12 +237,12 @@ function StoryRoute(props) {
               
               <div id="pageThree" className="hidden">
               <Content >
-                  <h3><img onClick={() => storyPrompt3()} id="soundBtn" src="http://localhost:3000/images/sound.png"/>{story.page3}</h3>
-                  <img src={"http://localhost:3000/images/"+story.page3Keyword+".png"} alt="icon"/>
+                  <h3><img onClick={() => storyPrompt3()} id="soundBtn" src="https://cryptic-shore-57916.herokuapp.com/images/sound.png"/>{story.page3}</h3>
+                  <img src={"https://cryptic-shore-57916.herokuapp.com/images/"+story.page3Keyword+".png"} alt="icon"/>
 
-                  <audio id="storyPrompt3" src={"http://localhost:3000/audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
-                  <audio id="answerCorrect3" src={"http://localhost:3000/audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
-                  <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
+                  <audio id="storyPrompt3" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page3Keyword+".mp3"} alt="audio"></audio>
+                  <audio id="answerCorrect3" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page3Keyword+"correct.mp3"} alt="audio"></audio>
+                  <audio id="tryAgain" src={"https://cryptic-shore-57916.herokuapp.com/audio/tryagain.mp3"} alt="audio"></audio>
 
                   {story.page3options ? (
                                         
@@ -265,12 +265,12 @@ function StoryRoute(props) {
 
               <div id="pageFour" className="hidden">
               <Content >
-                <h3><img onClick={() => storyPrompt4()} id="soundBtn" src="http://localhost:3000/images/sound.png"/>{story.page4}</h3>
-                <img src={"http://localhost:3000/images/"+story.page4Keyword+".png"} alt="icon"/>
+                <h3><img onClick={() => storyPrompt4()} id="soundBtn" src="https://cryptic-shore-57916.herokuapp.com/images/sound.png"/>{story.page4}</h3>
+                <img src={"https://cryptic-shore-57916.herokuapp.com/images/"+story.page4Keyword+".png"} alt="icon"/>
 
-                <audio id="storyPrompt4" src={"http://localhost:3000/audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
-                <audio id="answerCorrect4" src={"http://localhost:3000/audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
-                <audio id="tryAgain" src={"http://localhost:3000/audio/tryagain.mp3"} alt="audio"></audio>
+                <audio id="storyPrompt4" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page4Keyword+".mp3"} alt="audio"></audio>
+                <audio id="answerCorrect4" src={"https://cryptic-shore-57916.herokuapp.com/audio/"+story.page4Keyword+"correct.mp3"} alt="audio"></audio>
+                <audio id="tryAgain" src={"https://cryptic-shore-57916.herokuapp.com/audio/tryagain.mp3"} alt="audio"></audio>
 
                 {story.page4options ? (
                                       
