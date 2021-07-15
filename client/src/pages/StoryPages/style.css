@@ -20,12 +20,12 @@ img {
     font-size: 40px;
     padding: 35px;
     text-align: center;
-    outline: none;
-    text-decoration: none;
+    outline: none !important;
+    text-decoration: none !important;
     display: inline-block;
     border-radius: 15px;
     transition-duration: 0.4s;
-    margin: 5%;
+    margin: 1%;
 }
 
 .valueButton:hover {
