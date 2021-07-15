@@ -12,7 +12,7 @@ function LoginForm({ onLogin }) {
 	return (
 		<div className="d-flex justify-content-center align-items-center flex-column container">
 			
-			<h1> Just Read It!</h1>
+			<h1> Welcome</h1>
 			<Card title="Login with username and password">
 					<form
 						ref={formRef}
