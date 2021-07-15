@@ -4,6 +4,8 @@
 
 - [Repo](https://github.com/LawrieDrew/Just-Read-It)
 
+- [Deployed Link](https://cryptic-shore-57916.herokuapp.com/)
+
 ## About / Synopsis
 
 Just Read It is an exciting new app designed to help children learn and practice their reading skills on a computer or mobile device.
