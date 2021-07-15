@@ -29,24 +29,16 @@ function BookCard() {
      
       console.log(userStories)
 
-      function playPop() {
-        var pop = document.getElementById('pop');
-          pop.currentTime = 0;
-          pop.play();
-      }
-
       function upDateBlurb( title, synopsis) {
         document.getElementById("Blurb").innerHTML = 
         `
        ${title}<br/>${synopsis}<br/>
-      <img id="soundBtn" src="./images/sound.png"/> 
+      
         `
+
+        // REMOVED PLAY BTN <img id="soundBtn" src="./images/sound.png"/> 
      }  
-     
-
-    
-    
-
+   
       return (
         
           <div id="landing" className="container">
@@ -61,7 +53,6 @@ function BookCard() {
                             }}>
                         <div className="books">
                         <img className="rounded mx-auto d-block" onMouseOver={() => upDateBlurb(userStories.title, userStories.synopsis)}  src="./images/book.png" alt="book"/>
-                        <audio id="pop" src={"./audio/"+"pop"+".mp3"}></audio>
                         </div>
                         </Link>
                         
@@ -76,7 +67,15 @@ function BookCard() {
 
                 <Friends/>
             
-            </div>                 
+            </div>           
+            {/* homepage audio */}
+            <div>
+					<iframe src="/audio/homepage.mp3" allow="autoPlay" >
+					</iframe> 
+					<audio loop autoPlay id="homepageAudio">
+						<source src="/audio/homepage.mp3" type="audio/filetype" />
+					</audio>
+			</div>                
           </div>
       )
   
