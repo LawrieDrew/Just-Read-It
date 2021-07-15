@@ -197,7 +197,7 @@ function StoryRoute(props) {
                         </div>
                       
                     ) : (
-                        <h3>No Results to Display</h3>
+                        <h3>Loading....</h3>
                     )}
                     <button className="hidden" id="nextbtn1" onClick={() => increment()}>Next Page</button>
               </Content>
@@ -227,7 +227,7 @@ function StoryRoute(props) {
                       </div>
                                       
                         ) : (
-                        <h3>No Results to Display</h3>
+                        <h3>Loading....</h3>
                       )}
 
                   <button className="hidden" id="nextbtn2" onClick={() => increment2()}>Next Page</button>
@@ -256,7 +256,7 @@ function StoryRoute(props) {
                               </div>
                                                         
                               ) : (
-                                <h3>No Results to Display</h3>
+                                <h3>Loading....</h3>
                             )}
                   <button  className="hidden" id="nextbtn3" onClick={() => increment3()}>Next Page</button>
               </Content>

@@ -38,7 +38,7 @@ function BookCard() {
 
         // REMOVED PLAY BTN <img id="soundBtn" src="./images/sound.png"/> 
      }  
-   
+
       return (
         
           <div id="landing" className="container">
@@ -75,8 +75,12 @@ function BookCard() {
 					<audio loop autoPlay id="homepageAudio">
 						<source src="/audio/homepage.mp3" type="audio/filetype" />
 					</audio>
-			</div>                
+			</div> 
+
+                     
           </div>
+
+        
       )
   
   }
